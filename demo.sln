@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TankStory", "Demo\build\demo.vcproj", "{F1AFD1D9-91D4-4189-818E-9124E41A3249}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Core", "ElvCore\build\ElvCore.vcproj", "{ADFCC09C-B01E-452F-B9D4-83A1A4108D65}"
+	ProjectSection(ProjectDependencies) = postProject
+		{405A03C7-B201-4D0B-BCC6-9DB8B707A62A} = {405A03C7-B201-4D0B-BCC6-9DB8B707A62A}
+		{D446A417-9F9D-42A3-9490-E2F985A69C5D} = {D446A417-9F9D-42A3-9490-E2F985A69C5D}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Game", "ElvGame\build\ElvGame.vcproj", "{FE8E5190-4D6F-4E80-86A5-7A59676E94B4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{ADFCC09C-B01E-452F-B9D4-83A1A4108D65} = {ADFCC09C-B01E-452F-B9D4-83A1A4108D65}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Depends", "Depends", "{5CACF6A9-B3E6-4CD9-8F1A-D0BC044C2CCF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ParticleUniverse", "depends\ParticleUniverse\ParticleUniverse.vcproj", "{D446A417-9F9D-42A3-9490-E2F985A69C5D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyGUI", "depends\mygui\MyGUIEngine\MyGUIEngine.vcproj", "{405A03C7-B201-4D0B-BCC6-9DB8B707A62A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F1AFD1D9-91D4-4189-818E-9124E41A3249}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F1AFD1D9-91D4-4189-818E-9124E41A3249}.Debug|Win32.Build.0 = Debug|Win32
+		{F1AFD1D9-91D4-4189-818E-9124E41A3249}.Release|Win32.ActiveCfg = Release|Win32
+		{F1AFD1D9-91D4-4189-818E-9124E41A3249}.Release|Win32.Build.0 = Release|Win32
+		{ADFCC09C-B01E-452F-B9D4-83A1A4108D65}.Debug|Win32.ActiveCfg = Debug|Win32
+		{ADFCC09C-B01E-452F-B9D4-83A1A4108D65}.Debug|Win32.Build.0 = Debug|Win32
+		{ADFCC09C-B01E-452F-B9D4-83A1A4108D65}.Release|Win32.ActiveCfg = Release|Win32
+		{ADFCC09C-B01E-452F-B9D4-83A1A4108D65}.Release|Win32.Build.0 = Release|Win32
+		{FE8E5190-4D6F-4E80-86A5-7A59676E94B4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FE8E5190-4D6F-4E80-86A5-7A59676E94B4}.Debug|Win32.Build.0 = Debug|Win32
+		{FE8E5190-4D6F-4E80-86A5-7A59676E94B4}.Release|Win32.ActiveCfg = Release|Win32
+		{FE8E5190-4D6F-4E80-86A5-7A59676E94B4}.Release|Win32.Build.0 = Release|Win32
+		{D446A417-9F9D-42A3-9490-E2F985A69C5D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D446A417-9F9D-42A3-9490-E2F985A69C5D}.Debug|Win32.Build.0 = Debug|Win32
+		{D446A417-9F9D-42A3-9490-E2F985A69C5D}.Release|Win32.ActiveCfg = Release|Win32
+		{D446A417-9F9D-42A3-9490-E2F985A69C5D}.Release|Win32.Build.0 = Release|Win32
+		{405A03C7-B201-4D0B-BCC6-9DB8B707A62A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{405A03C7-B201-4D0B-BCC6-9DB8B707A62A}.Debug|Win32.Build.0 = Debug|Win32
+		{405A03C7-B201-4D0B-BCC6-9DB8B707A62A}.Release|Win32.ActiveCfg = Release|Win32
+		{405A03C7-B201-4D0B-BCC6-9DB8B707A62A}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D446A417-9F9D-42A3-9490-E2F985A69C5D} = {5CACF6A9-B3E6-4CD9-8F1A-D0BC044C2CCF}
+		{405A03C7-B201-4D0B-BCC6-9DB8B707A62A} = {5CACF6A9-B3E6-4CD9-8F1A-D0BC044C2CCF}
+	EndGlobalSection
+EndGlobal
